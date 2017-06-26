@@ -1,0 +1,1 @@
+cat file.txt | awk 'BEGIN {max=0;} {for(j=1;j<=NF;j++) {A[NR,j]=$j;} if(NF>=max){max=NF;}} END {for(i=1; i<=max; i++){for(j=1;j<NR;j++){if(A[j, i]!="")printf("%s ", A[j, i]);}printf("%s\n", A[NR,i]);}}'
