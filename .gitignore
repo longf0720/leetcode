@@ -33,3 +33,7 @@
 
 # Mac
 *.DS_Store
+
+# Code blocks
+.layout
+.cbp
